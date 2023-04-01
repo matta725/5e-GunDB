@@ -55,9 +55,14 @@ struct gunDB {
 					while (getline(ls, word, ',')) {
 						switch (i) {
 						case 0:
-							//cout << word << "\n";
-							desc = word;
-							break;
+							if (desc != "") {
+								break;
+							}
+							else if (desc == "") {
+								//cout << word << "\n";
+								desc = word;
+								break;
+							}
 						case 1:
 							//cout << word << "\n";
 							brand.push_back(word);
@@ -115,9 +120,14 @@ struct gunDB {
 					while (getline(ls, word, ',')) {
 						switch (i) {
 						case 0:
-							//cout << word << "\n";
-							desc = word;
-							break;
+							if (desc != "") {
+								break;
+							}
+							else {
+								//cout << word << "\n";
+								desc = word;
+								break;
+							}
 						case 1:
 							//cout << word << "\n";
 							brand.push_back(word);

@@ -116,7 +116,7 @@ void rngGun(int type, int luck) {
                 break;
         }
         if (gun.desc == "") {
-            cout << "An error occurred while generating the weapon. :( \n\n";
+            cout << "An error occurred while parsing data from CSV. Weapon generation failed :( \n\n";
         }
         else {
             int rollBrand = Ranf(0, gun.brand.size());
