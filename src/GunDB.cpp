@@ -177,7 +177,7 @@ void rngGunType(string type) {
 }
 
 void rngGunRand() {
-    int gunType = Ranf(1, 6);
+    int gunType = Ranf(1, 7);
     rngGun(gunType, 0);
 }
 
@@ -187,7 +187,7 @@ void luckyGunType(string type, int luck) {
 }
 
 void luckyGunRand(int luck) {
-    int gunType = Ranf(1, 6);
+    int gunType = Ranf(1, 7);
     rngGun(gunType, luck);
 }
 
